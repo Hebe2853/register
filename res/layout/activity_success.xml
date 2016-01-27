@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.register.Success"
+    tools:ignore="MergeRootFrame" >
+
+    <TextView
+        android:id="@+id/textView_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="用户注册结果"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView_resultName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView_result"
+        android:text="账号："
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView_rePawd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView_resultName"
+        android:text="密码："
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView_re_Agree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_rePawd"
+        android:text="同意条款："
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView1_reUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_resultName"
+        android:layout_alignBottom="@+id/textView_resultName"
+        android:layout_alignRight="@+id/textView_result"
+        android:text=" " 
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textView1_rePawd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_rePawd"
+        android:layout_alignBottom="@+id/textView_rePawd"
+        android:layout_alignRight="@+id/textView1_reUser"
+        android:text="" 
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/textView1_re_Check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView_re_Agree"
+        android:layout_alignBottom="@+id/textView_re_Agree"
+        android:layout_toRightOf="@+id/textView_re_Agree"
+        android:text="" 
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/button_OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1_re_Check"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/textView_rePawd"
+        android:text="确认" />
+
+</RelativeLayout>
